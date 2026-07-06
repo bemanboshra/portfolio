@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Loading Screen -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav class="container nav-container">
+            <a href="#home" class="logo">Port<span>folio.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content animate-slide-up">
+                <h3>Hello, I'm</h3>
+                <h1 class="gradient-text">Beman Boshra </h1>
+                <h2>And I'm a programer <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p>I build interactive, modern, and high-performance applications. Transforming ideas into elegant, user-centric digital experiences.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <!-- SVG Waves -->
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0d0d1a" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,160C672,160,768,192,864,197.3C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content glass-card animate-slide-up">
+                <div class="about-text">
+                    <h3>Personal Summary</h3>
+                    <p>I am a passionate technologist with a keen eye for design and a strong foundation in backend and frontend systems. My mission is to bridge the gap between complex functionality and beautiful user interfaces.</p>
+                    
+                    <h3>Education</h3>
+                    <p>Graduated with a degree in Computer Science, focusing on Software Engineering and Artificial Intelligence. Constantly learning and evolving with the latest industry standards.</p>
+                    
+                    <h3>Career Goals</h3>
+                    <p>To lead innovative projects that leverage AI and modern web technologies to solve real-world problems, while continually growing as a Full-Stack Architect and UX expert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>My <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h4>Python</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="80%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h4>C++</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="75%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 7 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fas fa-robot skill-icon"></i>
+                        <h4>AI Tools</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <!-- Skill Card 8 -->
+                <div class="skill-card glass-card animate-slide-up">
+                    <div class="skill-info">
+                        <i class="fab fa-microsoft skill-icon"></i>
+                        <h4>Microsoft Office</h4>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card animate-slide-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Customer Feedback Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Feedback Analysis</h3>
+                        <p>A data-driven platform that aggregates customer reviews and uses sentiment analysis to provide actionable business insights.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card animate-slide-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Hotel Booking Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Hotel Booking Website</h3>
+                        <p>A responsive, modern booking platform allowing users to browse rooms, check availability, and process secure reservations.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card animate-slide-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Gym Recommendation Website using AI">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Gym Recommender</h3>
+                        <p>An intelligent platform that creates personalized workout and gym recommendations based on user goals using AI algorithms.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>AI Tools</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>My <span class="gradient-text">Services</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card animate-slide-up">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive, high-performance, and visually stunning websites tailored to your specific needs.</p>
+                </div>
+                <div class="service-card glass-card animate-slide-up">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Transforming raw data into meaningful insights using advanced statistical tools and visualization techniques.</p>
+                </div>
+                <div class="service-card glass-card animate-slide-up">
+                    <i class="fas fa-brain service-icon"></i>
+                    <h3>AI Prompt Engineering</h3>
+                    <p>Optimizing and crafting advanced prompts to maximize the efficiency and output quality of AI models.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline & Certificates Section -->
+    <section id="education" class="section-padding section-bg">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>Education & <span class="gradient-text">Certificates</span></h2>
+            </div>
+            
+            <div class="timeline-container">
+                <h3 class="subsection-title">Education Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item glass-card animate-slide-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2024</div>
+                        <h4>Bachelor of Computer Science</h4>
+                        <p>University of Technology</p>
+                        <p class="timeline-desc">Specialized in Software Engineering. Graduated with honors. Led the university coding club.</p>
+                    </div>
+                    <div class="timeline-item glass-card animate-slide-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h4>High School Diploma</h4>
+                        <p>Science & Mathematics Academy</p>
+                        <p class="timeline-desc">Focused on advanced mathematics and physics. Participated in national science fairs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificates-container" style="margin-top: 4rem;">
+                <h3 class="subsection-title">Certificates</h3>
+                <div class="certificates-grid">
+                    <div class="cert-card glass-card animate-slide-up">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Advanced Machine Learning</h4>
+                        <p>Coursera - 2023</p>
+                    </div>
+                    <div class="cert-card glass-card animate-slide-up">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Full-Stack Web Development</h4>
+                        <p>Udemy - 2022</p>
+                    </div>
+                    <div class="cert-card glass-card animate-slide-up">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h4>Data Science & Analytics</h4>
+                        <p>DataCamp - 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title animate-fade-in">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card animate-slide-up">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for any project or collaboration.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@yourdomain.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourusername</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form glass-card animate-slide-up">
+                    <form action="#" method="POST">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Port<span>folio.</span></div>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
